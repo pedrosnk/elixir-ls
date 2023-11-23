@@ -38,7 +38,7 @@ defmodule ElixirLS.Utils.Mixfile do
   defp deps do
     [
       {:jason_v, github: "elixir-lsp/jason", ref: @dep_versions[:jason_v]},
-      {:mix_task_archive_deps, github: "elixir-lsp/mix_task_archive_deps"},
+      {:mix_task_archive_deps, github: "pedrosnk/mix_task_archive_deps"},
       {:dialyxir_vendored,
        github: "elixir-lsp/dialyxir", ref: @dep_versions[:dialyxir_vendored], runtime: false}
     ]

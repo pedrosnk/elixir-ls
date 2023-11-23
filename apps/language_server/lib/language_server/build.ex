@@ -20,7 +20,7 @@ defmodule ElixirLS.LanguageServer.Build do
                   with_diagnostics([log: true], fn ->
                     try do
                       # this call can raise
-                      current_deps = Mix.Dep.load_on_environment([])
+                      current_deps = Mix.Dep.Converger.converge([])
 
                       purge_changed_deps(current_deps, cached_deps)
 
